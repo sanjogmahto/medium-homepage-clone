@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medium Clone</title>
+    <link rel="stylesheet" href="Medium.css">
+   
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="nav-left">
+            <h1 class="logo">Medium</h1>
+
+            <div class="search-box">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="text" placeholder="Search">
+            </div>
+        </div>
+
+        <div class="nav-right">
+            <button class="write-btn">
+                <i class="fa-regular fa-pen-to-square"></i>
+                Write
+            </button>
+
+            <i class="fa-regular fa-bell nav-icon"></i>
+
+            <img src="https://i.pravatar.cc/40" alt="Profile"
+                class="profile-img">
+        </div>
+    </nav>
+
+    <!-- Main Container -->
+    <div class="container">
+
+        <!-- Left Section -->
+        <main class="content">
+
+            <!-- Tabs -->
+            <div class="tabs">
+                <span class="active">For you</span>
+                <span>Following</span>
+                <span>Technology</span>
+                <span>Programming</span>
+            </div>
+
+            <!-- Articles -->
+            <section id="articles">
+
+                <!-- Article 1 -->
+                <article class="article-card">
+                    <div class="article-text">
+
+                        <div class="author">
+                            <img src="https://i.pravatar.cc/30?img=10">
+                            <span>John Doe</span>
+                        </div>
+
+                        <h2>
+                            10 JavaScript Tricks Every Developer Should Know
+                        </h2>
+
+                        <p>
+                            Learn useful JavaScript techniques that improve
+                            productivity and code quality.
+                        </p>
+
+                        <div class="article-footer">
+                            <span>Jun 13 • 6 min read</span>
+
+                            <button class="bookmark-btn">
+                                <i class="fa-regular fa-bookmark"></i>
+                            </button>
+                        </div>
+
+                    </div>
+
+                    <img src="https://images.unsplash.com/photo-1515879218367-8466d910aaa4?w=400"
+                        class="article-img">
+
+                </article>
+
+
+                <!-- Article 2 -->
+                <article class="article-card">
+
+                    <div class="article-text">
+
+                        <div class="author">
+                            <img src="https://i.pravatar.cc/30?img=20">
+                            <span>Sarah Smith</span>
+                        </div>
+
+                        <h2>
+                            Why Full Stack Development Is a Great Career Choice
+                        </h2>
+
+                        <p>
+                            Explore opportunities, salaries, and technologies
+                            involved in becoming a full stack developer.
+                        </p>
+
+                        <div class="article-footer">
+                            <span>Jun 12 • 5 min read</span>
+
+                            <button class="bookmark-btn">
+                                <i class="fa-regular fa-bookmark"></i>
+                            </button>
+                        </div>
+
+                    </div>
+
+                    <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=400"
+                        class="article-img">
+
+                </article>
+
+
+                <!-- Article 3 -->
+                <article class="article-card">
+
+                    <div class="article-text">
+
+                        <div class="author">
+                            <img src="https://i.pravatar.cc/30?img=30">
+                            <span>Emily Brown</span>
+                        </div>
+
+                        <h2>
+                            Master CSS Grid With Real World Examples
+                        </h2>
+
+                        <p>
+                            Understand CSS Grid concepts through practical
+                            layouts and projects.
+                        </p>
+
+                        <div class="article-footer">
+                            <span>Jun 10 • 8 min read</span>
+
+                            <button class="bookmark-btn">
+                                <i class="fa-regular fa-bookmark"></i>
+                            </button>
+                        </div>
+
+                    </div>
+
+                    <img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=400"
+                        class="article-img">
+
+                </article>
+
+            </section>
+
+        </main>
+
+
+        <!-- Sidebar -->
+        <aside class="sidebar">
+
+            <div class="sidebar-box">
+
+                <h3>Recommended Topics</h3>
+
+                <div class="topics">
+                    <button>Programming</button>
+                    <button>JavaScript</button>
+                    <button>Web Development</button>
+                    <button>CSS</button>
+                    <button>React</button>
+                    <button>Node.js</button>
+                </div>
+
+            </div>
+
+
+            <div class="sidebar-box">
+
+                <h3>Who to Follow</h3>
+
+                <div class="follow-user">
+                    <img src="https://i.pravatar.cc/40?img=41">
+                    <div>
+                        <h4>Alex Johnson</h4>
+                        <p>Frontend Developer</p>
+                    </div>
+                    <button>Follow</button>
+                </div>
+
+                <div class="follow-user">
+                    <img src="https://i.pravatar.cc/40?img=42">
+                    <div>
+                        <h4>Emma Wilson</h4>
+                        <p>Tech Writer</p>
+                    </div>
+                    <button>Follow</button>
+                </div>
+
+            </div>
+
+
+            <div class="sidebar-box">
+
+                <h3>Reading List</h3>
+
+                <p>
+                    Click the bookmark icon on articles to save them.
+                </p>
+
+                <ul id="reading-list"></ul>
+
+            </div>
+
+        </aside>
+
+    </div>
+
+    <script src="Medium.js"></script>
+
+</body>
+</html>
